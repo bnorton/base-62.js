@@ -1,5 +1,5 @@
 describe('lib', function() {
-  var lib, Library = require('../lib/foo');
+  var lib, Library = require('../lib/index');
 
   beforeEach(function() {
     lib = new Library({name: 'John Doe'});
