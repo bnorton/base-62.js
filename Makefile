@@ -15,6 +15,4 @@ clean:
 	@rm {{name}}.js {{name}}.min.js {{name}}.min.js.map
 
 test:
-	./node_modules/.bin/minijasminenode2 --verbose --forceexit **/*_spec.js
-
-
+	([ -e ./node_modules/.bin/minijasminenode2 ] && ./node_modules/.bin/minijasminenode2 --verbose --forceexit **/*_spec.js) || (printf "\nMini Jasmine not installed @ ./node_modules/.bin/minijasminenode2...\n\nTrying npm install\n\n" && npm install)
