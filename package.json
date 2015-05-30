@@ -1,0 +1,14 @@
+{
+  "name": "{{name}}.js",
+  "repository": "https://github.com/{{username}}/{{name}}.js.git",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "",
+  "keywords": [
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "minijasminenode2": "bnorton/minijasminenode"
+  }
+}
