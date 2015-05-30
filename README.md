@@ -13,8 +13,10 @@ A base configuration and starter project for a simple JavaScript library / Compo
 git clone git@github.com:bnorton/lib.js.git {{name}}.js
 ```
 
-####Search the whole project for `{{name}}`
-Rename everything you find
+####Search the project for things to replace
+1. Rename `{{name}}` to the new library name
+1. Rename `{{username}}` with yours on GitHub and CircleCI respectively
+1. Rename `{{full name}}` with your name and company name (if any)
 
 ####Add and Install dependencies
 Add any libraries / dependencies that you know of then
@@ -44,3 +46,7 @@ $ npm publish
 
 #### Add this project to CircleCI
 Enable the build status at the top of this doc
+
+------------------------
+
+####Replace this document with the real deal and `#win`
