@@ -2,6 +2,10 @@
 
 A base configuration and starter project for a simple JavaScript library / Component
 
+<!-- Remove after renaming {{name}} to the real project name and adding the {{circle-ci-username}}
+[![Circle CI](https://circleci.com/gh/{{circle-ci-username}}/{{name}}.js.svg?style=svg)](https://circleci.com/gh/{{circle-ci-username}}/{{name}}.js)
+-->
+
 ##Getting Started
 
 ####Clone this repository into a new directory
@@ -37,3 +41,6 @@ $ git commit -am "[Release] Version x.y.z"
 $ git tag -a 0.9.0 -m "[Release] Version x.y.z" -m "Other words of wisdom and what has changed"
 $ npm publish
 ```
+
+#### Add this project to CircleCI
+Enable the build status at the top of this doc
