@@ -2,15 +2,14 @@
 
 A base configuration and starter project for a simple JavaScript library / Component
 
-<!-- Remove after renaming {{name}} to the real project name and adding the {{circle-ci-username}}
-[![Circle CI](https://circleci.com/gh/{{circle-ci-username}}/{{name}}.js.svg?style=svg)](https://circleci.com/gh/{{circle-ci-username}}/{{name}}.js)
--->
-
 ##Getting Started
 
-####Clone this repository into a new directory
+####Clone this repository
+Setup a new directory and update the origin
 ```javascript
-git clone git@github.com:bnorton/lib.js.git {{name}}.js
+git clone git@github.com:{{username}}/lib.js.git {{name}}.js
+cd {{name}}.js
+git remote set-url origin git@github.com:{{username}}/{{name}}.js.git
 ```
 
 ####Search the project for things to replace
@@ -50,3 +49,6 @@ Enable the build status at the top of this doc
 ------------------------
 
 ####Replace this document with the real deal and `#win`
+```bash
+$ mv README.lib.md README.md
+```
