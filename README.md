@@ -7,7 +7,7 @@ A base configuration and starter project for a simple JavaScript library / Compo
 ####Clone this repository
 Setup a new directory and update the origin
 ```javascript
-git clone git@github.com:{{username}}/lib.js.git {{name}}.js
+git clone git@github.com:bnorton/lib.js.git {{name}}.js
 cd {{name}}.js
 git remote set-url origin git@github.com:{{username}}/{{name}}.js.git
 ```
@@ -44,7 +44,7 @@ $ npm publish
 ```
 
 #### Add this project to CircleCI
-Enable the build status at the top of this doc
+Enable the build status at the top of the README.lib.md doc
 
 ------------------------
 
