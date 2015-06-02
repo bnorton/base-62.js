@@ -1,12 +1,18 @@
 {
-  "name": "{{name}}.js",
-  "repository": "https://github.com/{{username}}/{{name}}.js.git",
+  "name": "base-62.js",
+  "repository": "https://github.com/bnorton/base-62.js.git",
   "version": "0.1.0",
   "license": "MIT",
-  "description": "",
+  "description": "Base62 + big.js",
   "keywords": [
+    "base62",
+    "token generator",
+    "API token",
+    "MongoDB",
+    "ObjectID"
   ],
   "dependencies": {
+    "big.js": "3.x"
   },
   "devDependencies": {
     "minijasminenode2": "bnorton/minijasminenode"
