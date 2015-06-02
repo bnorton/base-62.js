@@ -1,7 +1,7 @@
 {
   "name": "base-62.js",
   "repository": "https://github.com/bnorton/base-62.js.git",
-  "version": "0.1.0",
+  "version": "0.9.0",
   "license": "MIT",
   "description": "Base62 + big.js",
   "keywords": [
