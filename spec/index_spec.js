@@ -67,4 +67,32 @@ describe('Base62', function() {
       expect(base62.decodeHex('yvCvCYLaAgBtX8mQ')).toBe('55bd4f700260006ffa495400');
     });
   });
+
+  describe('token', function() {
+    var token1, token2, token3;
+
+    beforeEach(function() {
+      token1 = base62.token();
+      token2 = base62.token();
+      token3 = base62.token();
+    });
+
+    it('should work', function() {
+      expect(token1).not.toMatch(/null|undefined/);
+      expect(token2).not.toMatch(/null|undefined/);
+      expect(token3).not.toMatch(/null|undefined/);
+    });
+
+    it('should generate a token', function() {
+      expect(token1).toMatch(/[0-9a-zA-Z]{16,24}/);
+      expect(token2).toMatch(/[0-9a-zA-Z]{16,24}/);
+      expect(token3).toMatch(/[0-9a-zA-Z]{16,24}/);
+    });
+
+    it('should be unique tokens', function() {
+      expect(token1).not.toEqual(token2);
+      expect(token1).not.toEqual(token3);
+      expect(token2).not.toEqual(token3);
+    });
+  });
 });
