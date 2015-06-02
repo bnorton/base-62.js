@@ -1184,7 +1184,7 @@ Base62 = {
 };
 
 function random() {
-  return Base62.encode(parseInt(Math.random()*Number.MAX_SAFE_INTEGER), 10);
+  return Base62.encode(Math.floor(Math.random()*Number.MAX_SAFE_INTEGER));
 }
 
 function intToHex(decStr) {
