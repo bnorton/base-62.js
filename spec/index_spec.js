@@ -84,9 +84,9 @@ describe('Base62', function() {
     });
 
     it('should generate a token', function() {
-      expect(token1).toMatch(/[0-9a-zA-Z]{16,24}/);
-      expect(token2).toMatch(/[0-9a-zA-Z]{16,24}/);
-      expect(token3).toMatch(/[0-9a-zA-Z]{16,24}/);
+      expect(token1).toMatch(/^[0-9a-zA-Z]{26,30}$/);
+      expect(token2).toMatch(/^[0-9a-zA-Z]{26,30}$/);
+      expect(token3).toMatch(/^[0-9a-zA-Z]{26,30}$/);
     });
 
     it('should be unique tokens', function() {
