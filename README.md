@@ -18,26 +18,26 @@ var base62 = require('base-62.js');
 ###Use it to convert a number to a base 62 string
 ```javascript
 base62.encode('144928238032487217698238462873470924850921348902347582734698872031234');
-//=> TODO FIND ACTUAL VALUE
+//=> "17BHYOc7KWVceLGi6QvVTM1OELAxTLd1EwAtmQW"
 ```
 
 ###Use it to come back
 ```javascript
-base62.decode(TODO FIND ACTUAL VALUE);
+base62.decode('17BHYOc7KWVceLGi6QvVTM1OELAxTLd1EwAtmQW');
 //=> "144928238032487217698238462873470924850921348902347582734698872031234"
 ```
 
 ###Create a portable token from a MongoDB Object id (or any HEX string)
 ```javascript
 base62.encodeHex('556c9e573337620003000000');
-//=> VALUE
+//=> "ynKPk8OoB7EzcAus"
 
-base62.decodeHex(VALUE)
+base62.decodeHex('ynKPk8OoB7EzcAus')
 //=> "556c9e573337620003000000"
 ```
 
 ###Create a random token (API Access or a random password)
 ```javascript
 base62.random()
-//=> ACTUAL SAMPLE VALUE
+//=> "jplADVZ4H8gYGRXGSbki8zBZsv5"
 ```
