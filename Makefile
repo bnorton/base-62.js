@@ -1,7 +1,7 @@
 all: build minify headerify
 
 build:
-	@browserify lib/index.js --standalone {{name}} > index.js
+	@browserify lib/index.js --standalone base-62 > index.js
 
 minify:
 	@uglifyjs index.js --compress --mangle --stats --output index.min.js --source-map index.min.js.map

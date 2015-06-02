@@ -1,54 +1,43 @@
-# lib.js
+# base-62.js
 
-A base configuration and starter project for a simple JavaScript library / Component
+[![Circle CI](https://circleci.com/gh/bnorton/base-62.js.svg?style=svg)](https://circleci.com/gh/bnorton/base-62.js)
+[![npm version](https://badge.fury.io/js/base-62.js.svg)](http://badge.fury.io/js/base-62.js)
 
-##Getting Started
+#Getting started
 
-####Clone this repository
-Setup a new directory and update the origin
+###Install it
+```bash
+$ npm install base-62.js
+```
+
+###Require it
 ```javascript
-git clone git@github.com:bnorton/lib.js.git {{name}}.js
-cd {{name}}.js
-git remote set-url origin git@github.com:{{username}}/{{name}}.js.git
+var base62 = require('base-62.js');
 ```
 
-####Search the project for things to replace
-1. Rename `{{name}}` to the new library name
-1. Rename `{{username}}` with yours on GitHub and CircleCI respectively
-1. Rename `{{full name}}` with your name and company name (if any)
-
-####Add and Install dependencies
-Add any libraries / dependencies that you know of then
-```bash
-$ npm install -g browserify
-$ npm install -g uglify
-$ npm install
+###Use it to convert a number to a base 62 string
+```javascript
+base62.encode('144928238032487217698238462873470924850921348902347582734698872031234');
+//=> TODO FIND ACTUAL VALUE
 ```
 
-####Add tests
-```bash
-$ make test
+###Use it to come back
+```javascript
+base62.decode(TODO FIND ACTUAL VALUE);
+//=> "144928238032487217698238462873470924850921348902347582734698872031234"
 ```
 
-####Add implementations
-```bash
-$ make test
+###Create a portable token from a MongoDB Object id (or any HEX string)
+```javascript
+base62.encodeHex('556c9e573337620003000000');
+//=> VALUE
+
+base62.decodeHex(VALUE)
+//=> "556c9e573337620003000000"
 ```
 
-####Build you first browserified / minified versions and publish
-```bash
-$ make
-$ git commit -am "[Release] Version x.y.z"
-$ git tag -a 0.9.0 -m "[Release] Version x.y.z" -m "Other words of wisdom and what has changed"
-$ npm publish
-```
-
-#### Add this project to CircleCI
-Enable the build status at the top of the README.lib.md doc
-
-------------------------
-
-####Replace this document with the real deal and `#win`
-```bash
-$ mv README.lib.md README.md
+###Create a random token (API Access or a random password)
+```javascript
+base62.random()
+//=> ACTUAL SAMPLE VALUE
 ```
