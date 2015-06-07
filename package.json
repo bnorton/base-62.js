@@ -13,7 +13,7 @@
   ],
   "dependencies": {
     "big.js": "3.x",
-    "seedrandom": "2.x"
+    "random.js": "*"
   },
   "devDependencies": {
     "minijasminenode2": "bnorton/minijasminenode"
