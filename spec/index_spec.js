@@ -95,4 +95,20 @@ describe('Base62', function() {
       expect(token2).not.toEqual(token3);
     });
   });
+
+  describe('#short', function() {
+    it('should shorten the id', function() {
+      expect(base62.short('57035729f433ea1dc7219f62')).toEqual('z1oXy68dBvAi7AtA');
+      expect(base62.short('55a05c7a626e6f8168000000')).toEqual('ysNy1u9llUsh9ckM');
+      expect(base62.short('56aeaf53f433ea1aca000000')).toEqual('yT9jWKi6F8yyWywE');
+    });
+  });
+
+  describe('#id', function() {
+    it('should expand the short', function() {
+      expect(base62.id('z1oXy68dBvAi7AtA')).toEqual('57035729f433ea1dc7219f62');
+      expect(base62.id('ysNy1u9llUsh9ckM')).toEqual('55a05c7a626e6f8168000000');
+      expect(base62.id('yT9jWKi6F8yyWywE')).toEqual('56aeaf53f433ea1aca000000');
+    });
+  });
 });
